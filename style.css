@@ -1,0 +1,122 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    margin-inline: 50px;
+    margin-bottom: 40px;
+    color: #333333;
+    font-family: Inconsolata;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    justify-content: space-around;
+    margin: 50px;
+}
+
+.pic-container {
+    background-image: url(image/scarecrow.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.txt-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+}
+
+.header-txt {
+    color: #333333;
+    font-family: space mono;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+.header-des {
+    color: #4F4F4F;
+    font-family: Space Mono;
+    font-size: 18px;
+    letter-spacing: -0.84px;
+    width: 55%;
+    padding-bottom: 30px;
+}
+
+.header-btn {
+    background-color: #333333;
+    color: #FFF;
+    font-family: Space Mono;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-inline: 5%;
+    padding-block: 3%;
+    border: none;
+}
+
+.pic-container, .txt-container {
+    width: 40%;
+    height: 100%;
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    color: #BDBDBD;
+}
+
+footer a {
+    color: #BDBDBD;
+    text-decoration: none;
+}
+
+@media screen and (max-width:576px) {
+    header {
+        margin-inline: 30px;
+        margin-bottom: 0px;
+    }
+
+    .page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: space-around;
+        margin: 30px;
+        padding-bottom: 80px;
+    }
+
+    .pic-container, .txt-container {
+        width: 100%;
+        height: 50%;
+    }
+
+    .header-txt {
+        font-size: 40px;
+
+    }
+
+    .header-des {
+        width: 75%;
+    }
+
+}
